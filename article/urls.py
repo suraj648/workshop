@@ -4,7 +4,7 @@ from .views import *
 
 urlpatterns = [
 
-    path('',admin.site.urls)
+    path('',index , name='index')
 
     
 ]
