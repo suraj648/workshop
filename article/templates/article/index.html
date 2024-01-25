@@ -4,4 +4,37 @@
 
 <h1>this is index.html</h1>
 
+<br>
+
+<div class="container">
+
+    <h2>ALL Articles</h2>
+
+    <div class = "row ">
+        
+        {% for article in data  %}
+        <div class="card col-3 m-3" style="width: 18rem;">
+            <img src="{{article.img.url}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> {{article.title | truncatewords:7}} {{article.pub_date}} </h5>
+              <p class="card-text">{{article.content | truncatewords:25 }}   </p>
+              <a href="#" class="">Read Article</a>
+            </div>
+          </div>
+    
+            {% endfor %}
+        </div>
+    
+    
+    
+
+    
+    
+    
+      </div>
+
+</div>
+
+
+
 {% endblock content %}
