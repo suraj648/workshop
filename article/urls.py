@@ -9,6 +9,10 @@ urlpatterns = [
 
     path('article/<int:pk>/', single_article ,name = 'single_article'),
 
+    path('article/cateegory/<int:pk>/',categorised_article,name='categorised_article'),
+
+    path('article/post/', post_article , name = 'post_article'),
+
     
 ]
 
